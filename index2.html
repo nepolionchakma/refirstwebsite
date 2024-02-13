@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="big()">Big</button>
+        <button onclick="small()">Small </button>
+        <button onclick="normal()">Normal</button>
+        <br>
+        <video controls src="https://www.w3schools.com/html/mov_bbb.mp4" id="video" type="video/mp4"></video>
+    </div>
+    <script>
+        var myVideo= document.getElementById('video')
+        function playPause(){
+            if(myVideo.Paused())
+                myVideo.play();
+            else
+                myVideo.Pause();
+            
+        }
+        function big(){
+            myVideo.width=300;
+        }
+        function small(){
+            myVideo.width=100;
+        }
+        function normal(){
+            myVideo.width=500;
+        }
+    </script>
+</body>
+</html>
